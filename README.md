@@ -143,8 +143,6 @@ Class | Method | HTTP request | Description
 *OpensvcAgentApi.DaemonApi* | [**postDaemonShutdown**](docs/DaemonApi.md#postDaemonShutdown) | **POST** /node/name/{nodename}/daemon/action/shutdown | 
 *OpensvcAgentApi.DaemonApi* | [**postDaemonStop**](docs/DaemonApi.md#postDaemonStop) | **POST** /node/name/{nodename}/daemon/action/stop | 
 *OpensvcAgentApi.DaemonApi* | [**postDaemonSubAction**](docs/DaemonApi.md#postDaemonSubAction) | **POST** /daemon/sub/action | 
-*OpensvcAgentApi.DefaultApi* | [**getAuthInfo**](docs/DefaultApi.md#getAuthInfo) | **GET** /auth/info | 
-*OpensvcAgentApi.DefaultApi* | [**getwhoami**](docs/DefaultApi.md#getwhoami) | **GET** /whoami | 
 *OpensvcAgentApi.DnsApi* | [**getDNSDump**](docs/DnsApi.md#getDNSDump) | **GET** /dns/dump | 
 *OpensvcAgentApi.InstanceApi* | [**getInstances**](docs/InstanceApi.md#getInstances) | **GET** /instance | 
 *OpensvcAgentApi.InstanceCfgApi* | [**getInstance**](docs/InstanceCfgApi.md#getInstance) | **GET** /node/name/{nodename}/instance/path/{namespace}/{kind}/{name} | 
@@ -286,8 +284,6 @@ Class | Method | HTTP request | Description
 ## Documentation for Models
 
  - [OpensvcAgentApi.ArbitratorStatus](docs/ArbitratorStatus.md)
- - [OpensvcAgentApi.AuthInfo](docs/AuthInfo.md)
- - [OpensvcAgentApi.AuthInfoOpenid](docs/AuthInfoOpenid.md)
  - [OpensvcAgentApi.AuthToken](docs/AuthToken.md)
  - [OpensvcAgentApi.Capability](docs/Capability.md)
  - [OpensvcAgentApi.CapabilityItem](docs/CapabilityItem.md)
@@ -382,7 +378,6 @@ Class | Method | HTTP request | Description
  - [OpensvcAgentApi.Status](docs/Status.md)
  - [OpensvcAgentApi.SubsetConfig](docs/SubsetConfig.md)
  - [OpensvcAgentApi.Topology](docs/Topology.md)
- - [OpensvcAgentApi.UserIdentity](docs/UserIdentity.md)
 
 
 ## Documentation for Authorization

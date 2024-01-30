@@ -14,8 +14,6 @@
 
 import ApiClient from './ApiClient';
 import ArbitratorStatus from './model/ArbitratorStatus';
-import AuthInfo from './model/AuthInfo';
-import AuthInfoOpenid from './model/AuthInfoOpenid';
 import AuthToken from './model/AuthToken';
 import Capability from './model/Capability';
 import CapabilityItem from './model/CapabilityItem';
@@ -110,11 +108,9 @@ import ScheduleList from './model/ScheduleList';
 import Status from './model/Status';
 import SubsetConfig from './model/SubsetConfig';
 import Topology from './model/Topology';
-import UserIdentity from './model/UserIdentity';
 import AuthApi from './api/AuthApi';
 import ClusterApi from './api/ClusterApi';
 import DaemonApi from './api/DaemonApi';
-import DefaultApi from './api/DefaultApi';
 import DnsApi from './api/DnsApi';
 import InstanceApi from './api/InstanceApi';
 import InstanceCfgApi from './api/InstanceCfgApi';
@@ -180,18 +176,6 @@ export {
      * @property {module:model/ArbitratorStatus}
      */
     ArbitratorStatus,
-
-    /**
-     * The AuthInfo model constructor.
-     * @property {module:model/AuthInfo}
-     */
-    AuthInfo,
-
-    /**
-     * The AuthInfoOpenid model constructor.
-     * @property {module:model/AuthInfoOpenid}
-     */
-    AuthInfoOpenid,
 
     /**
      * The AuthToken model constructor.
@@ -758,12 +742,6 @@ export {
     Topology,
 
     /**
-     * The UserIdentity model constructor.
-     * @property {module:model/UserIdentity}
-     */
-    UserIdentity,
-
-    /**
     * The AuthApi service constructor.
     * @property {module:api/AuthApi}
     */
@@ -780,12 +758,6 @@ export {
     * @property {module:api/DaemonApi}
     */
     DaemonApi,
-
-    /**
-    * The DefaultApi service constructor.
-    * @property {module:api/DefaultApi}
-    */
-    DefaultApi,
 
     /**
     * The DnsApi service constructor.
