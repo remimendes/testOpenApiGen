@@ -392,4 +392,4 @@ Authentication schemes defined for the API:
 
 - **Type**: Bearer authentication (JWT)
 
-Wed Jan 31 09:20:35 UTC 2024
+Wed Jan 31 09:25:33 UTC 2024
