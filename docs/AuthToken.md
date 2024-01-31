@@ -1,4 +1,4 @@
-# OpensvcAgentApi.AuthToken
+# TestOpensvcAgentApi.AuthToken
 
 ## Properties
 

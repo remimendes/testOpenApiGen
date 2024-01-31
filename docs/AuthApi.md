@@ -1,4 +1,4 @@
-# OpensvcAgentApi.AuthApi
+# TestOpensvcAgentApi.AuthApi
 
 All URIs are relative to *http://localhost*
 
@@ -14,13 +14,13 @@ Method | HTTP request | Description
 
 
 
-Create and return a JSON Web Token the client can use as a Authorization header in its following requests.  The requested roles are embedded as a &#39;grant&#39; claim if matching the usr &#39;grant&#39; keyword. 
+Create and return a JSON Web Token the client can use as a Authorization header in its following requests. The requested role s are embedd   ed as a &#39;grant&#39; claim if matching the usr  &#39;grant&#39; keyword. 
 
 ### Example
 
 ```javascript
-import OpensvcAgentApi from 'opensvc_agent_api';
-let defaultClient = OpensvcAgentApi.ApiClient.instance;
+import TestOpensvcAgentApi from 'test_opensvc_agent_api';
+let defaultClient = TestOpensvcAgentApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
 let basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
@@ -29,9 +29,9 @@ basicAuth.password = 'YOUR PASSWORD';
 let bearerAuth = defaultClient.authentications['bearerAuth'];
 bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new OpensvcAgentApi.AuthApi();
+let apiInstance = new TestOpensvcAgentApi.AuthApi();
 let opts = {
-  'role': [new OpensvcAgentApi.Role()], // [Role] | list of api role
+  'role': [new TestOpensvcAgentApi.Role()], // [Role] | list of api role
   'duration': 10m // String | max token duration, maximum value 24h
 };
 apiInstance.postAuthToken(opts, (error, data, response) => {

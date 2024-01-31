@@ -1,4 +1,4 @@
-# OpensvcAgentApi.ObjectItem
+# TestOpensvcAgentApi.ObjectItem
 
 ## Properties
 

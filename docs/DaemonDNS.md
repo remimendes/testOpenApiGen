@@ -1,4 +1,4 @@
-# OpensvcAgentApi.DaemonDNS
+# TestOpensvcAgentApi.DaemonDNS
 
 ## Properties
 

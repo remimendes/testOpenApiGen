@@ -1,4 +1,4 @@
-# OpensvcAgentApi.ClusterApi
+# TestOpensvcAgentApi.ClusterApi
 
 All URIs are relative to *http://localhost*
 
@@ -21,8 +21,8 @@ Abort the running cluster-wide action orchestration.  Reset the node monitor glo
 ### Example
 
 ```javascript
-import OpensvcAgentApi from 'opensvc_agent_api';
-let defaultClient = OpensvcAgentApi.ApiClient.instance;
+import TestOpensvcAgentApi from 'test_opensvc_agent_api';
+let defaultClient = TestOpensvcAgentApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
 let basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
@@ -31,7 +31,7 @@ basicAuth.password = 'YOUR PASSWORD';
 let bearerAuth = defaultClient.authentications['bearerAuth'];
 bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new OpensvcAgentApi.ClusterApi();
+let apiInstance = new TestOpensvcAgentApi.ClusterApi();
 apiInstance.postClusterActionAbort((error, data, response) => {
   if (error) {
     console.error(error);
@@ -65,13 +65,13 @@ This endpoint does not need any parameter.
 
 
 
-Freeze all the cluster nodes.  Prevent all service monitors decisions, for example services takeover.  Nodes should be frozen before any maintenance operation on the system, the clusterware or the managed applications. 
+Freeze all the cluster nodes.  Prevent all servic e monitors decisions, for example services takeover.  Nodes should be frozen before any maintenance operation on the system, the cluster ware or the managed applications. 
 
 ### Example
 
 ```javascript
-import OpensvcAgentApi from 'opensvc_agent_api';
-let defaultClient = OpensvcAgentApi.ApiClient.instance;
+import TestOpensvcAgentApi from 'test_opensvc_agent_api';
+let defaultClient = TestOpensvcAgentApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
 let basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
@@ -80,7 +80,7 @@ basicAuth.password = 'YOUR PASSWORD';
 let bearerAuth = defaultClient.authentications['bearerAuth'];
 bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new OpensvcAgentApi.ClusterApi();
+let apiInstance = new TestOpensvcAgentApi.ClusterApi();
 apiInstance.postClusterActionFreeze((error, data, response) => {
   if (error) {
     console.error(error);
@@ -119,8 +119,8 @@ Unfreeze all the cluster nodes.  Restore service monitors decision taking capabi
 ### Example
 
 ```javascript
-import OpensvcAgentApi from 'opensvc_agent_api';
-let defaultClient = OpensvcAgentApi.ApiClient.instance;
+import TestOpensvcAgentApi from 'test_opensvc_agent_api';
+let defaultClient = TestOpensvcAgentApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
 let basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
@@ -129,7 +129,7 @@ basicAuth.password = 'YOUR PASSWORD';
 let bearerAuth = defaultClient.authentications['bearerAuth'];
 bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new OpensvcAgentApi.ClusterApi();
+let apiInstance = new TestOpensvcAgentApi.ClusterApi();
 apiInstance.postClusterActionUnfreeze((error, data, response) => {
   if (error) {
     console.error(error);

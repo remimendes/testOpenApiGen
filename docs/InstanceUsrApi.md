@@ -1,4 +1,4 @@
-# OpensvcAgentApi.InstanceUsrApi
+# TestOpensvcAgentApi.InstanceUsrApi
 
 All URIs are relative to *http://localhost*
 
@@ -20,8 +20,8 @@ Method | HTTP request | Description
 ### Example
 
 ```javascript
-import OpensvcAgentApi from 'opensvc_agent_api';
-let defaultClient = OpensvcAgentApi.ApiClient.instance;
+import TestOpensvcAgentApi from 'test_opensvc_agent_api';
+let defaultClient = TestOpensvcAgentApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
 let basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
@@ -30,10 +30,10 @@ basicAuth.password = 'YOUR PASSWORD';
 let bearerAuth = defaultClient.authentications['bearerAuth'];
 bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new OpensvcAgentApi.InstanceUsrApi();
+let apiInstance = new TestOpensvcAgentApi.InstanceUsrApi();
 let nodename = localhost; // String | 
 let namespace = test; // String | 
-let kind = new OpensvcAgentApi.Kind(); // Kind | 
+let kind = new TestOpensvcAgentApi.Kind(); // Kind | 
 let name = "name_example"; // String | 
 apiInstance.getInstance(nodename, namespace, kind, name, (error, data, response) => {
   if (error) {
@@ -79,8 +79,8 @@ Serve new logs
 ### Example
 
 ```javascript
-import OpensvcAgentApi from 'opensvc_agent_api';
-let defaultClient = OpensvcAgentApi.ApiClient.instance;
+import TestOpensvcAgentApi from 'test_opensvc_agent_api';
+let defaultClient = TestOpensvcAgentApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
 let basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
@@ -89,10 +89,10 @@ basicAuth.password = 'YOUR PASSWORD';
 let bearerAuth = defaultClient.authentications['bearerAuth'];
 bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new OpensvcAgentApi.InstanceUsrApi();
+let apiInstance = new TestOpensvcAgentApi.InstanceUsrApi();
 let nodename = localhost; // String | 
 let namespace = test; // String | 
-let kind = new OpensvcAgentApi.Kind(); // Kind | 
+let kind = new TestOpensvcAgentApi.Kind(); // Kind | 
 let name = "name_example"; // String | 
 let opts = {
   'filter': ["sid=9a8e04e6-bc12-43e6-83d1-fe10d5363ea7"], // [String] | list of log filter
@@ -146,8 +146,8 @@ Delete the object instance.
 ### Example
 
 ```javascript
-import OpensvcAgentApi from 'opensvc_agent_api';
-let defaultClient = OpensvcAgentApi.ApiClient.instance;
+import TestOpensvcAgentApi from 'test_opensvc_agent_api';
+let defaultClient = TestOpensvcAgentApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
 let basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
@@ -156,10 +156,10 @@ basicAuth.password = 'YOUR PASSWORD';
 let bearerAuth = defaultClient.authentications['bearerAuth'];
 bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new OpensvcAgentApi.InstanceUsrApi();
+let apiInstance = new TestOpensvcAgentApi.InstanceUsrApi();
 let nodename = localhost; // String | 
 let namespace = test; // String | 
-let kind = new OpensvcAgentApi.Kind(); // Kind | 
+let kind = new TestOpensvcAgentApi.Kind(); // Kind | 
 let name = "name_example"; // String | 
 let opts = {
   'requesterSid': "requesterSid_example" // String | 
@@ -209,8 +209,8 @@ Clear an error (\&quot;start failed\&quot; for example) in the instance monitor 
 ### Example
 
 ```javascript
-import OpensvcAgentApi from 'opensvc_agent_api';
-let defaultClient = OpensvcAgentApi.ApiClient.instance;
+import TestOpensvcAgentApi from 'test_opensvc_agent_api';
+let defaultClient = TestOpensvcAgentApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
 let basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
@@ -219,10 +219,10 @@ basicAuth.password = 'YOUR PASSWORD';
 let bearerAuth = defaultClient.authentications['bearerAuth'];
 bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new OpensvcAgentApi.InstanceUsrApi();
+let apiInstance = new TestOpensvcAgentApi.InstanceUsrApi();
 let nodename = localhost; // String | 
 let namespace = test; // String | 
-let kind = new OpensvcAgentApi.Kind(); // Kind | 
+let kind = new TestOpensvcAgentApi.Kind(); // Kind | 
 let name = "name_example"; // String | 
 apiInstance.postInstanceClear(nodename, namespace, kind, name, (error, data, response) => {
   if (error) {

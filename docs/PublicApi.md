@@ -1,4 +1,4 @@
-# OpensvcAgentApi.PublicApi
+# TestOpensvcAgentApi.PublicApi
 
 All URIs are relative to *http://localhost*
 
@@ -17,9 +17,9 @@ Method | HTTP request | Description
 ### Example
 
 ```javascript
-import OpensvcAgentApi from 'opensvc_agent_api';
+import TestOpensvcAgentApi from 'test_opensvc_agent_api';
 
-let apiInstance = new OpensvcAgentApi.PublicApi();
+let apiInstance = new TestOpensvcAgentApi.PublicApi();
 apiInstance.getSwagger((error, data, response) => {
   if (error) {
     console.error(error);

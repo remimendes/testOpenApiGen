@@ -1,4 +1,4 @@
-# OpensvcAgentApi.DaemonStatus
+# TestOpensvcAgentApi.DaemonStatus
 
 ## Properties
 

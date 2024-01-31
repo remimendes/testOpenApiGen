@@ -1,4 +1,4 @@
-# OpensvcAgentApi.ArbitratorStatus
+# TestOpensvcAgentApi.ArbitratorStatus
 
 ## Properties
 

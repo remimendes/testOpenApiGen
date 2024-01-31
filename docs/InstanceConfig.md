@@ -1,4 +1,4 @@
-# OpensvcAgentApi.InstanceConfig
+# TestOpensvcAgentApi.InstanceConfig
 
 ## Properties
 

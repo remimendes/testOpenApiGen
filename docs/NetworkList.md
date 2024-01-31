@@ -1,4 +1,4 @@
-# OpensvcAgentApi.NetworkList
+# TestOpensvcAgentApi.NetworkList
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# OpensvcAgentApi.ResourceList
+# TestOpensvcAgentApi.ResourceList
 
 ## Properties
 

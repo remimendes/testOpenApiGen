@@ -1,4 +1,4 @@
-# OpensvcAgentApi.Kind
+# TestOpensvcAgentApi.Kind
 
 ## Enum
 

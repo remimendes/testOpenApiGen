@@ -1,4 +1,4 @@
-# OpensvcAgentApi.DaemonHbMode
+# TestOpensvcAgentApi.DaemonHbMode
 
 ## Properties
 

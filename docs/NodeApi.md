@@ -1,4 +1,4 @@
-# OpensvcAgentApi.NodeApi
+# TestOpensvcAgentApi.NodeApi
 
 All URIs are relative to *http://localhost*
 
@@ -39,8 +39,8 @@ Return the capabilities of the node. Capability scanners are provided by the cor
 ### Example
 
 ```javascript
-import OpensvcAgentApi from 'opensvc_agent_api';
-let defaultClient = OpensvcAgentApi.ApiClient.instance;
+import TestOpensvcAgentApi from 'test_opensvc_agent_api';
+let defaultClient = TestOpensvcAgentApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
 let basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
@@ -49,7 +49,7 @@ basicAuth.password = 'YOUR PASSWORD';
 let bearerAuth = defaultClient.authentications['bearerAuth'];
 bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new OpensvcAgentApi.NodeApi();
+let apiInstance = new TestOpensvcAgentApi.NodeApi();
 let nodename = localhost; // String | 
 apiInstance.getNodeCapabilities(nodename, (error, data, response) => {
   if (error) {
@@ -92,8 +92,8 @@ Get or evaluate a keyword in the node configuration file.
 ### Example
 
 ```javascript
-import OpensvcAgentApi from 'opensvc_agent_api';
-let defaultClient = OpensvcAgentApi.ApiClient.instance;
+import TestOpensvcAgentApi from 'test_opensvc_agent_api';
+let defaultClient = TestOpensvcAgentApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
 let basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
@@ -102,7 +102,7 @@ basicAuth.password = 'YOUR PASSWORD';
 let bearerAuth = defaultClient.authentications['bearerAuth'];
 bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new OpensvcAgentApi.NodeApi();
+let apiInstance = new TestOpensvcAgentApi.NodeApi();
 let nodename = localhost; // String | 
 let opts = {
   'kw': ["env.unwanted"], // [String] | 
@@ -153,8 +153,8 @@ Get the drbd driver minor numbers and ports already allocated on the node.
 ### Example
 
 ```javascript
-import OpensvcAgentApi from 'opensvc_agent_api';
-let defaultClient = OpensvcAgentApi.ApiClient.instance;
+import TestOpensvcAgentApi from 'test_opensvc_agent_api';
+let defaultClient = TestOpensvcAgentApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
 let basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
@@ -163,7 +163,7 @@ basicAuth.password = 'YOUR PASSWORD';
 let bearerAuth = defaultClient.authentications['bearerAuth'];
 bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new OpensvcAgentApi.NodeApi();
+let apiInstance = new TestOpensvcAgentApi.NodeApi();
 let nodename = localhost; // String | 
 apiInstance.getNodeDRBDAllocation(nodename, (error, data, response) => {
   if (error) {
@@ -206,8 +206,8 @@ Fetch from a node a drbd configuration file fragment.
 ### Example
 
 ```javascript
-import OpensvcAgentApi from 'opensvc_agent_api';
-let defaultClient = OpensvcAgentApi.ApiClient.instance;
+import TestOpensvcAgentApi from 'test_opensvc_agent_api';
+let defaultClient = TestOpensvcAgentApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
 let basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
@@ -216,7 +216,7 @@ basicAuth.password = 'YOUR PASSWORD';
 let bearerAuth = defaultClient.authentications['bearerAuth'];
 bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new OpensvcAgentApi.NodeApi();
+let apiInstance = new TestOpensvcAgentApi.NodeApi();
 let nodename = localhost; // String | 
 let name = "name_example"; // String | the full path of the file is deduced from the name
 apiInstance.getNodeDRBDConfig(nodename, name, (error, data, response) => {
@@ -261,8 +261,8 @@ Serve new logs
 ### Example
 
 ```javascript
-import OpensvcAgentApi from 'opensvc_agent_api';
-let defaultClient = OpensvcAgentApi.ApiClient.instance;
+import TestOpensvcAgentApi from 'test_opensvc_agent_api';
+let defaultClient = TestOpensvcAgentApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
 let basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
@@ -271,7 +271,7 @@ basicAuth.password = 'YOUR PASSWORD';
 let bearerAuth = defaultClient.authentications['bearerAuth'];
 bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new OpensvcAgentApi.NodeApi();
+let apiInstance = new TestOpensvcAgentApi.NodeApi();
 let nodename = localhost; // String | 
 let opts = {
   'filter': ["sid=9a8e04e6-bc12-43e6-83d1-fe10d5363ea7"], // [String] | list of log filter
@@ -324,8 +324,8 @@ Return the schedule table of the node.
 ### Example
 
 ```javascript
-import OpensvcAgentApi from 'opensvc_agent_api';
-let defaultClient = OpensvcAgentApi.ApiClient.instance;
+import TestOpensvcAgentApi from 'test_opensvc_agent_api';
+let defaultClient = TestOpensvcAgentApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
 let basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
@@ -334,7 +334,7 @@ basicAuth.password = 'YOUR PASSWORD';
 let bearerAuth = defaultClient.authentications['bearerAuth'];
 bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new OpensvcAgentApi.NodeApi();
+let apiInstance = new TestOpensvcAgentApi.NodeApi();
 let nodename = localhost; // String | 
 apiInstance.getNodeSchedule(nodename, (error, data, response) => {
   if (error) {
@@ -375,8 +375,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import OpensvcAgentApi from 'opensvc_agent_api';
-let defaultClient = OpensvcAgentApi.ApiClient.instance;
+import TestOpensvcAgentApi from 'test_opensvc_agent_api';
+let defaultClient = TestOpensvcAgentApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
 let basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
@@ -385,7 +385,7 @@ basicAuth.password = 'YOUR PASSWORD';
 let bearerAuth = defaultClient.authentications['bearerAuth'];
 bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new OpensvcAgentApi.NodeApi();
+let apiInstance = new TestOpensvcAgentApi.NodeApi();
 let opts = {
   'node': n2,az=eu1 // String | node selector expression.
 };
@@ -428,8 +428,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import OpensvcAgentApi from 'opensvc_agent_api';
-let defaultClient = OpensvcAgentApi.ApiClient.instance;
+import TestOpensvcAgentApi from 'test_opensvc_agent_api';
+let defaultClient = TestOpensvcAgentApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
 let basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
@@ -438,7 +438,7 @@ basicAuth.password = 'YOUR PASSWORD';
 let bearerAuth = defaultClient.authentications['bearerAuth'];
 bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new OpensvcAgentApi.NodeApi();
+let apiInstance = new TestOpensvcAgentApi.NodeApi();
 apiInstance.getNodesInfo((error, data, response) => {
   if (error) {
     console.error(error);
@@ -477,8 +477,8 @@ Refresh and send to the collector the asset discovery.
 ### Example
 
 ```javascript
-import OpensvcAgentApi from 'opensvc_agent_api';
-let defaultClient = OpensvcAgentApi.ApiClient.instance;
+import TestOpensvcAgentApi from 'test_opensvc_agent_api';
+let defaultClient = TestOpensvcAgentApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
 let basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
@@ -487,7 +487,7 @@ basicAuth.password = 'YOUR PASSWORD';
 let bearerAuth = defaultClient.authentications['bearerAuth'];
 bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new OpensvcAgentApi.NodeApi();
+let apiInstance = new TestOpensvcAgentApi.NodeApi();
 let nodename = localhost; // String | 
 let opts = {
   'requesterSid': "requesterSid_example" // String | 
@@ -534,8 +534,8 @@ Refresh and send to the collector the disk discovery.
 ### Example
 
 ```javascript
-import OpensvcAgentApi from 'opensvc_agent_api';
-let defaultClient = OpensvcAgentApi.ApiClient.instance;
+import TestOpensvcAgentApi from 'test_opensvc_agent_api';
+let defaultClient = TestOpensvcAgentApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
 let basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
@@ -544,7 +544,7 @@ basicAuth.password = 'YOUR PASSWORD';
 let bearerAuth = defaultClient.authentications['bearerAuth'];
 bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new OpensvcAgentApi.NodeApi();
+let apiInstance = new TestOpensvcAgentApi.NodeApi();
 let nodename = localhost; // String | 
 let opts = {
   'requesterSid': "requesterSid_example" // String | 
@@ -591,8 +591,8 @@ Refresh and send to the collector the package discovery.
 ### Example
 
 ```javascript
-import OpensvcAgentApi from 'opensvc_agent_api';
-let defaultClient = OpensvcAgentApi.ApiClient.instance;
+import TestOpensvcAgentApi from 'test_opensvc_agent_api';
+let defaultClient = TestOpensvcAgentApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
 let basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
@@ -601,7 +601,7 @@ basicAuth.password = 'YOUR PASSWORD';
 let bearerAuth = defaultClient.authentications['bearerAuth'];
 bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new OpensvcAgentApi.NodeApi();
+let apiInstance = new TestOpensvcAgentApi.NodeApi();
 let nodename = localhost; // String | 
 let opts = {
   'requesterSid': "requesterSid_example" // String | 
@@ -648,8 +648,8 @@ Refresh and send to the collector the package discovery.
 ### Example
 
 ```javascript
-import OpensvcAgentApi from 'opensvc_agent_api';
-let defaultClient = OpensvcAgentApi.ApiClient.instance;
+import TestOpensvcAgentApi from 'test_opensvc_agent_api';
+let defaultClient = TestOpensvcAgentApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
 let basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
@@ -658,7 +658,7 @@ basicAuth.password = 'YOUR PASSWORD';
 let bearerAuth = defaultClient.authentications['bearerAuth'];
 bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new OpensvcAgentApi.NodeApi();
+let apiInstance = new TestOpensvcAgentApi.NodeApi();
 let nodename = localhost; // String | 
 let opts = {
   'requesterSid': "requesterSid_example" // String | 
@@ -705,8 +705,8 @@ Refresh the node capabilities cache. Capability scanners are provided by the cor
 ### Example
 
 ```javascript
-import OpensvcAgentApi from 'opensvc_agent_api';
-let defaultClient = OpensvcAgentApi.ApiClient.instance;
+import TestOpensvcAgentApi from 'test_opensvc_agent_api';
+let defaultClient = TestOpensvcAgentApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
 let basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
@@ -715,7 +715,7 @@ basicAuth.password = 'YOUR PASSWORD';
 let bearerAuth = defaultClient.authentications['bearerAuth'];
 bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new OpensvcAgentApi.NodeApi();
+let apiInstance = new TestOpensvcAgentApi.NodeApi();
 let nodename = localhost; // String | 
 let opts = {
   'requesterSid': "requesterSid_example" // String | 
@@ -762,8 +762,8 @@ Collect and send a new sysreport.
 ### Example
 
 ```javascript
-import OpensvcAgentApi from 'opensvc_agent_api';
-let defaultClient = OpensvcAgentApi.ApiClient.instance;
+import TestOpensvcAgentApi from 'test_opensvc_agent_api';
+let defaultClient = TestOpensvcAgentApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
 let basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
@@ -772,7 +772,7 @@ basicAuth.password = 'YOUR PASSWORD';
 let bearerAuth = defaultClient.authentications['bearerAuth'];
 bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new OpensvcAgentApi.NodeApi();
+let apiInstance = new TestOpensvcAgentApi.NodeApi();
 let nodename = localhost; // String | 
 let opts = {
   'force': true, // Boolean | 
@@ -821,8 +821,8 @@ Clears errors (for example, failed) in the node monitor state.
 ### Example
 
 ```javascript
-import OpensvcAgentApi from 'opensvc_agent_api';
-let defaultClient = OpensvcAgentApi.ApiClient.instance;
+import TestOpensvcAgentApi from 'test_opensvc_agent_api';
+let defaultClient = TestOpensvcAgentApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
 let basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
@@ -831,7 +831,7 @@ basicAuth.password = 'YOUR PASSWORD';
 let bearerAuth = defaultClient.authentications['bearerAuth'];
 bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new OpensvcAgentApi.NodeApi();
+let apiInstance = new TestOpensvcAgentApi.NodeApi();
 apiInstance.postNodeClear((error, data, response) => {
   if (error) {
     console.error(error);
@@ -870,8 +870,8 @@ Delete sections, unset and set keywords in the node configuration file.
 ### Example
 
 ```javascript
-import OpensvcAgentApi from 'opensvc_agent_api';
-let defaultClient = OpensvcAgentApi.ApiClient.instance;
+import TestOpensvcAgentApi from 'test_opensvc_agent_api';
+let defaultClient = TestOpensvcAgentApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
 let basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
@@ -880,7 +880,7 @@ basicAuth.password = 'YOUR PASSWORD';
 let bearerAuth = defaultClient.authentications['bearerAuth'];
 bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new OpensvcAgentApi.NodeApi();
+let apiInstance = new TestOpensvcAgentApi.NodeApi();
 let nodename = localhost; // String | 
 let opts = {
   '_delete': ["task#unwanted"], // [String] | 
@@ -931,8 +931,8 @@ Send to a node a drbd configuration file fragment to install.
 ### Example
 
 ```javascript
-import OpensvcAgentApi from 'opensvc_agent_api';
-let defaultClient = OpensvcAgentApi.ApiClient.instance;
+import TestOpensvcAgentApi from 'test_opensvc_agent_api';
+let defaultClient = TestOpensvcAgentApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
 let basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
@@ -941,10 +941,10 @@ basicAuth.password = 'YOUR PASSWORD';
 let bearerAuth = defaultClient.authentications['bearerAuth'];
 bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new OpensvcAgentApi.NodeApi();
+let apiInstance = new TestOpensvcAgentApi.NodeApi();
 let nodename = localhost; // String | 
 let name = "name_example"; // String | the full path of the file is deduced from the name
-let postNodeDRBDConfigRequest = new OpensvcAgentApi.PostNodeDRBDConfigRequest(); // PostNodeDRBDConfigRequest | monitor
+let postNodeDRBDConfigRequest = new TestOpensvcAgentApi.PostNodeDRBDConfigRequest(); // PostNodeDRBDConfigRequest | monitor
 apiInstance.postNodeDRBDConfig(nodename, name, postNodeDRBDConfigRequest, (error, data, response) => {
   if (error) {
     console.error(error);
@@ -986,8 +986,8 @@ null (empty response body)
 ### Example
 
 ```javascript
-import OpensvcAgentApi from 'opensvc_agent_api';
-let defaultClient = OpensvcAgentApi.ApiClient.instance;
+import TestOpensvcAgentApi from 'test_opensvc_agent_api';
+let defaultClient = TestOpensvcAgentApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
 let basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
@@ -996,7 +996,7 @@ basicAuth.password = 'YOUR PASSWORD';
 let bearerAuth = defaultClient.authentications['bearerAuth'];
 bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new OpensvcAgentApi.NodeApi();
+let apiInstance = new TestOpensvcAgentApi.NodeApi();
 let nodename = localhost; // String | 
 apiInstance.postPeerActionAbort(nodename, (error, data, response) => {
   if (error) {
@@ -1037,8 +1037,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import OpensvcAgentApi from 'opensvc_agent_api';
-let defaultClient = OpensvcAgentApi.ApiClient.instance;
+import TestOpensvcAgentApi from 'test_opensvc_agent_api';
+let defaultClient = TestOpensvcAgentApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
 let basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
@@ -1047,7 +1047,7 @@ basicAuth.password = 'YOUR PASSWORD';
 let bearerAuth = defaultClient.authentications['bearerAuth'];
 bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new OpensvcAgentApi.NodeApi();
+let apiInstance = new TestOpensvcAgentApi.NodeApi();
 let nodename = localhost; // String | 
 apiInstance.postPeerActionDrain(nodename, (error, data, response) => {
   if (error) {
@@ -1090,8 +1090,8 @@ Freeze the node.
 ### Example
 
 ```javascript
-import OpensvcAgentApi from 'opensvc_agent_api';
-let defaultClient = OpensvcAgentApi.ApiClient.instance;
+import TestOpensvcAgentApi from 'test_opensvc_agent_api';
+let defaultClient = TestOpensvcAgentApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
 let basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
@@ -1100,7 +1100,7 @@ basicAuth.password = 'YOUR PASSWORD';
 let bearerAuth = defaultClient.authentications['bearerAuth'];
 bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new OpensvcAgentApi.NodeApi();
+let apiInstance = new TestOpensvcAgentApi.NodeApi();
 let nodename = localhost; // String | 
 let opts = {
   'requesterSid': "requesterSid_example" // String | 
@@ -1147,8 +1147,8 @@ Unfreeze the node.
 ### Example
 
 ```javascript
-import OpensvcAgentApi from 'opensvc_agent_api';
-let defaultClient = OpensvcAgentApi.ApiClient.instance;
+import TestOpensvcAgentApi from 'test_opensvc_agent_api';
+let defaultClient = TestOpensvcAgentApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
 let basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
@@ -1157,7 +1157,7 @@ basicAuth.password = 'YOUR PASSWORD';
 let bearerAuth = defaultClient.authentications['bearerAuth'];
 bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new OpensvcAgentApi.NodeApi();
+let apiInstance = new TestOpensvcAgentApi.NodeApi();
 let nodename = localhost; // String | 
 let opts = {
   'requesterSid': "requesterSid_example" // String | 

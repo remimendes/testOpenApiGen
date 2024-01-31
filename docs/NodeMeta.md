@@ -1,4 +1,4 @@
-# OpensvcAgentApi.NodeMeta
+# TestOpensvcAgentApi.NodeMeta
 
 ## Properties
 

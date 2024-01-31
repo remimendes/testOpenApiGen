@@ -1,4 +1,4 @@
-# OpensvcAgentApi.ScheduleItem
+# TestOpensvcAgentApi.ScheduleItem
 
 ## Properties
 

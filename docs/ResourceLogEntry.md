@@ -1,4 +1,4 @@
-# OpensvcAgentApi.ResourceLogEntry
+# TestOpensvcAgentApi.ResourceLogEntry
 
 ## Properties
 

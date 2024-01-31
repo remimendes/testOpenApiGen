@@ -1,4 +1,4 @@
-# OpensvcAgentApi.DaemonHbStreamType
+# TestOpensvcAgentApi.DaemonHbStreamType
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# OpensvcAgentApi.ResourceApi
+# TestOpensvcAgentApi.ResourceApi
 
 All URIs are relative to *http://localhost*
 
@@ -17,8 +17,8 @@ Method | HTTP request | Description
 ### Example
 
 ```javascript
-import OpensvcAgentApi from 'opensvc_agent_api';
-let defaultClient = OpensvcAgentApi.ApiClient.instance;
+import TestOpensvcAgentApi from 'test_opensvc_agent_api';
+let defaultClient = TestOpensvcAgentApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
 let basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
@@ -27,7 +27,7 @@ basicAuth.password = 'YOUR PASSWORD';
 let bearerAuth = defaultClient.authentications['bearerAuth'];
 bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new OpensvcAgentApi.ResourceApi();
+let apiInstance = new TestOpensvcAgentApi.ResourceApi();
 let opts = {
   'path': db1,web*, // String | object selector expression.
   'node': n2,az=eu1, // String | node selector expression.

@@ -1,4 +1,4 @@
-# OpensvcAgentApi.NodeInfo
+# TestOpensvcAgentApi.NodeInfo
 
 ## Properties
 

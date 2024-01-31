@@ -1,4 +1,4 @@
-# OpensvcAgentApi.NodeLabel
+# TestOpensvcAgentApi.NodeLabel
 
 ## Properties
 

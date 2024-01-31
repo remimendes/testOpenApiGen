@@ -1,4 +1,4 @@
-# OpensvcAgentApi.SANPathInitiator
+# TestOpensvcAgentApi.SANPathInitiator
 
 ## Properties
 

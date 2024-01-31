@@ -1,4 +1,4 @@
-# OpensvcAgentApi.PostObjectActionSwitch
+# TestOpensvcAgentApi.PostObjectActionSwitch
 
 ## Properties
 

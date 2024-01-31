@@ -1,4 +1,4 @@
-# OpensvcAgentApi.PostNodeDRBDConfigRequest
+# TestOpensvcAgentApi.PostNodeDRBDConfigRequest
 
 ## Properties
 

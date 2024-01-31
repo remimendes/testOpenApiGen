@@ -1,4 +1,4 @@
-# OpensvcAgentApi.InternalApi
+# TestOpensvcAgentApi.InternalApi
 
 All URIs are relative to *http://localhost*
 
@@ -22,8 +22,8 @@ Add a new node to the cluster of the requested api node.  The requester must be 
 ### Example
 
 ```javascript
-import OpensvcAgentApi from 'opensvc_agent_api';
-let defaultClient = OpensvcAgentApi.ApiClient.instance;
+import TestOpensvcAgentApi from 'test_opensvc_agent_api';
+let defaultClient = TestOpensvcAgentApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
 let basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
@@ -32,7 +32,7 @@ basicAuth.password = 'YOUR PASSWORD';
 let bearerAuth = defaultClient.authentications['bearerAuth'];
 bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new OpensvcAgentApi.InternalApi();
+let apiInstance = new TestOpensvcAgentApi.InternalApi();
 let node = new_node; // String | The node to add to cluster nodes
 apiInstance.postDaemonJoin(node, (error, data, response) => {
   if (error) {
@@ -75,8 +75,8 @@ Register a leave request to remove a cluster node member. The requester must be 
 ### Example
 
 ```javascript
-import OpensvcAgentApi from 'opensvc_agent_api';
-let defaultClient = OpensvcAgentApi.ApiClient.instance;
+import TestOpensvcAgentApi from 'test_opensvc_agent_api';
+let defaultClient = TestOpensvcAgentApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
 let basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
@@ -85,7 +85,7 @@ basicAuth.password = 'YOUR PASSWORD';
 let bearerAuth = defaultClient.authentications['bearerAuth'];
 bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new OpensvcAgentApi.InternalApi();
+let apiInstance = new TestOpensvcAgentApi.InternalApi();
 let node = node-wto-remove; // String | The leaving cluster node
 apiInstance.postDaemonLeave(node, (error, data, response) => {
   if (error) {
@@ -126,8 +126,8 @@ null (empty response body)
 ### Example
 
 ```javascript
-import OpensvcAgentApi from 'opensvc_agent_api';
-let defaultClient = OpensvcAgentApi.ApiClient.instance;
+import TestOpensvcAgentApi from 'test_opensvc_agent_api';
+let defaultClient = TestOpensvcAgentApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
 let basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
@@ -136,11 +136,11 @@ basicAuth.password = 'YOUR PASSWORD';
 let bearerAuth = defaultClient.authentications['bearerAuth'];
 bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new OpensvcAgentApi.InternalApi();
+let apiInstance = new TestOpensvcAgentApi.InternalApi();
 let namespace = test; // String | 
-let kind = new OpensvcAgentApi.Kind(); // Kind | 
+let kind = new TestOpensvcAgentApi.Kind(); // Kind | 
 let name = "name_example"; // String | 
-let postInstanceProgress = new OpensvcAgentApi.PostInstanceProgress(); // PostInstanceProgress | Change the instance monitor state to reflect the progress of actions the daemon did not started.
+let postInstanceProgress = new TestOpensvcAgentApi.PostInstanceProgress(); // PostInstanceProgress | Change the instance monitor state to reflect the progress of actions the daemon did not started.
 apiInstance.postInstanceProgress(namespace, kind, name, postInstanceProgress, (error, data, response) => {
   if (error) {
     console.error(error);
@@ -183,8 +183,8 @@ null (empty response body)
 ### Example
 
 ```javascript
-import OpensvcAgentApi from 'opensvc_agent_api';
-let defaultClient = OpensvcAgentApi.ApiClient.instance;
+import TestOpensvcAgentApi from 'test_opensvc_agent_api';
+let defaultClient = TestOpensvcAgentApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
 let basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
@@ -193,11 +193,11 @@ basicAuth.password = 'YOUR PASSWORD';
 let bearerAuth = defaultClient.authentications['bearerAuth'];
 bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new OpensvcAgentApi.InternalApi();
+let apiInstance = new TestOpensvcAgentApi.InternalApi();
 let namespace = test; // String | 
-let kind = new OpensvcAgentApi.Kind(); // Kind | 
+let kind = new TestOpensvcAgentApi.Kind(); // Kind | 
 let name = "name_example"; // String | 
-let instanceStatus = new OpensvcAgentApi.InstanceStatus(); // InstanceStatus | post object status
+let instanceStatus = new TestOpensvcAgentApi.InstanceStatus(); // InstanceStatus | post object status
 apiInstance.postInstanceStatus(namespace, kind, name, instanceStatus, (error, data, response) => {
   if (error) {
     console.error(error);

@@ -1,4 +1,4 @@
-# OpensvcAgentApi.DaemonHbStreamPeer
+# TestOpensvcAgentApi.DaemonHbStreamPeer
 
 ## Properties
 

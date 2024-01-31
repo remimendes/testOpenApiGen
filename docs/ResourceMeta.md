@@ -1,4 +1,4 @@
-# OpensvcAgentApi.ResourceMeta
+# TestOpensvcAgentApi.ResourceMeta
 
 ## Properties
 

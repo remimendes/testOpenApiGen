@@ -1,4 +1,4 @@
-# OpensvcAgentApi.DaemonCollector
+# TestOpensvcAgentApi.DaemonCollector
 
 ## Properties
 

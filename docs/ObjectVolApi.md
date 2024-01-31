@@ -1,4 +1,4 @@
-# OpensvcAgentApi.ObjectVolApi
+# TestOpensvcAgentApi.ObjectVolApi
 
 All URIs are relative to *http://localhost*
 
@@ -30,8 +30,8 @@ Method | HTTP request | Description
 ### Example
 
 ```javascript
-import OpensvcAgentApi from 'opensvc_agent_api';
-let defaultClient = OpensvcAgentApi.ApiClient.instance;
+import TestOpensvcAgentApi from 'test_opensvc_agent_api';
+let defaultClient = TestOpensvcAgentApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
 let basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
@@ -40,9 +40,9 @@ basicAuth.password = 'YOUR PASSWORD';
 let bearerAuth = defaultClient.authentications['bearerAuth'];
 bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new OpensvcAgentApi.ObjectVolApi();
+let apiInstance = new TestOpensvcAgentApi.ObjectVolApi();
 let namespace = test; // String | 
-let kind = new OpensvcAgentApi.Kind(); // Kind | 
+let kind = new TestOpensvcAgentApi.Kind(); // Kind | 
 let name = "name_example"; // String | 
 apiInstance.getObject(namespace, kind, name, (error, data, response) => {
   if (error) {
@@ -85,8 +85,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import OpensvcAgentApi from 'opensvc_agent_api';
-let defaultClient = OpensvcAgentApi.ApiClient.instance;
+import TestOpensvcAgentApi from 'test_opensvc_agent_api';
+let defaultClient = TestOpensvcAgentApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
 let basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
@@ -95,9 +95,9 @@ basicAuth.password = 'YOUR PASSWORD';
 let bearerAuth = defaultClient.authentications['bearerAuth'];
 bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new OpensvcAgentApi.ObjectVolApi();
+let apiInstance = new TestOpensvcAgentApi.ObjectVolApi();
 let namespace = test; // String | 
-let kind = new OpensvcAgentApi.Kind(); // Kind | 
+let kind = new TestOpensvcAgentApi.Kind(); // Kind | 
 let name = "name_example"; // String | 
 let opts = {
   'evaluate': true, // Boolean | evaluate
@@ -146,8 +146,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import OpensvcAgentApi from 'opensvc_agent_api';
-let defaultClient = OpensvcAgentApi.ApiClient.instance;
+import TestOpensvcAgentApi from 'test_opensvc_agent_api';
+let defaultClient = TestOpensvcAgentApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
 let basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
@@ -156,9 +156,9 @@ basicAuth.password = 'YOUR PASSWORD';
 let bearerAuth = defaultClient.authentications['bearerAuth'];
 bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new OpensvcAgentApi.ObjectVolApi();
+let apiInstance = new TestOpensvcAgentApi.ObjectVolApi();
 let namespace = test; // String | 
-let kind = new OpensvcAgentApi.Kind(); // Kind | 
+let kind = new TestOpensvcAgentApi.Kind(); // Kind | 
 let name = "name_example"; // String | 
 apiInstance.getObjectConfigFile(namespace, kind, name, (error, data, response) => {
   if (error) {
@@ -203,8 +203,8 @@ Get or evaluate a keyword in the object configuration file.
 ### Example
 
 ```javascript
-import OpensvcAgentApi from 'opensvc_agent_api';
-let defaultClient = OpensvcAgentApi.ApiClient.instance;
+import TestOpensvcAgentApi from 'test_opensvc_agent_api';
+let defaultClient = TestOpensvcAgentApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
 let basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
@@ -213,9 +213,9 @@ basicAuth.password = 'YOUR PASSWORD';
 let bearerAuth = defaultClient.authentications['bearerAuth'];
 bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new OpensvcAgentApi.ObjectVolApi();
+let apiInstance = new TestOpensvcAgentApi.ObjectVolApi();
 let namespace = test; // String | 
-let kind = new OpensvcAgentApi.Kind(); // Kind | 
+let kind = new TestOpensvcAgentApi.Kind(); // Kind | 
 let name = "name_example"; // String | 
 let opts = {
   'kw': ["env.unwanted"], // [String] | 
@@ -266,8 +266,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import OpensvcAgentApi from 'opensvc_agent_api';
-let defaultClient = OpensvcAgentApi.ApiClient.instance;
+import TestOpensvcAgentApi from 'test_opensvc_agent_api';
+let defaultClient = TestOpensvcAgentApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
 let basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
@@ -276,9 +276,9 @@ basicAuth.password = 'YOUR PASSWORD';
 let bearerAuth = defaultClient.authentications['bearerAuth'];
 bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new OpensvcAgentApi.ObjectVolApi();
+let apiInstance = new TestOpensvcAgentApi.ObjectVolApi();
 let namespace = test; // String | 
-let kind = new OpensvcAgentApi.Kind(); // Kind | 
+let kind = new TestOpensvcAgentApi.Kind(); // Kind | 
 let name = "name_example"; // String | 
 apiInstance.postObjectActionAbort(namespace, kind, name, (error, data, response) => {
   if (error) {
@@ -321,8 +321,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import OpensvcAgentApi from 'opensvc_agent_api';
-let defaultClient = OpensvcAgentApi.ApiClient.instance;
+import TestOpensvcAgentApi from 'test_opensvc_agent_api';
+let defaultClient = TestOpensvcAgentApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
 let basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
@@ -331,9 +331,9 @@ basicAuth.password = 'YOUR PASSWORD';
 let bearerAuth = defaultClient.authentications['bearerAuth'];
 bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new OpensvcAgentApi.ObjectVolApi();
+let apiInstance = new TestOpensvcAgentApi.ObjectVolApi();
 let namespace = test; // String | 
-let kind = new OpensvcAgentApi.Kind(); // Kind | 
+let kind = new TestOpensvcAgentApi.Kind(); // Kind | 
 let name = "name_example"; // String | 
 apiInstance.postObjectActionDelete(namespace, kind, name, (error, data, response) => {
   if (error) {
@@ -376,8 +376,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import OpensvcAgentApi from 'opensvc_agent_api';
-let defaultClient = OpensvcAgentApi.ApiClient.instance;
+import TestOpensvcAgentApi from 'test_opensvc_agent_api';
+let defaultClient = TestOpensvcAgentApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
 let basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
@@ -386,9 +386,9 @@ basicAuth.password = 'YOUR PASSWORD';
 let bearerAuth = defaultClient.authentications['bearerAuth'];
 bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new OpensvcAgentApi.ObjectVolApi();
+let apiInstance = new TestOpensvcAgentApi.ObjectVolApi();
 let namespace = test; // String | 
-let kind = new OpensvcAgentApi.Kind(); // Kind | 
+let kind = new TestOpensvcAgentApi.Kind(); // Kind | 
 let name = "name_example"; // String | 
 apiInstance.postObjectActionFreeze(namespace, kind, name, (error, data, response) => {
   if (error) {
@@ -431,8 +431,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import OpensvcAgentApi from 'opensvc_agent_api';
-let defaultClient = OpensvcAgentApi.ApiClient.instance;
+import TestOpensvcAgentApi from 'test_opensvc_agent_api';
+let defaultClient = TestOpensvcAgentApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
 let basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
@@ -441,9 +441,9 @@ basicAuth.password = 'YOUR PASSWORD';
 let bearerAuth = defaultClient.authentications['bearerAuth'];
 bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new OpensvcAgentApi.ObjectVolApi();
+let apiInstance = new TestOpensvcAgentApi.ObjectVolApi();
 let namespace = test; // String | 
-let kind = new OpensvcAgentApi.Kind(); // Kind | 
+let kind = new TestOpensvcAgentApi.Kind(); // Kind | 
 let name = "name_example"; // String | 
 apiInstance.postObjectActionProvision(namespace, kind, name, (error, data, response) => {
   if (error) {
@@ -486,8 +486,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import OpensvcAgentApi from 'opensvc_agent_api';
-let defaultClient = OpensvcAgentApi.ApiClient.instance;
+import TestOpensvcAgentApi from 'test_opensvc_agent_api';
+let defaultClient = TestOpensvcAgentApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
 let basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
@@ -496,9 +496,9 @@ basicAuth.password = 'YOUR PASSWORD';
 let bearerAuth = defaultClient.authentications['bearerAuth'];
 bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new OpensvcAgentApi.ObjectVolApi();
+let apiInstance = new TestOpensvcAgentApi.ObjectVolApi();
 let namespace = test; // String | 
-let kind = new OpensvcAgentApi.Kind(); // Kind | 
+let kind = new TestOpensvcAgentApi.Kind(); // Kind | 
 let name = "name_example"; // String | 
 apiInstance.postObjectActionPurge(namespace, kind, name, (error, data, response) => {
   if (error) {
@@ -541,8 +541,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import OpensvcAgentApi from 'opensvc_agent_api';
-let defaultClient = OpensvcAgentApi.ApiClient.instance;
+import TestOpensvcAgentApi from 'test_opensvc_agent_api';
+let defaultClient = TestOpensvcAgentApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
 let basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
@@ -551,9 +551,9 @@ basicAuth.password = 'YOUR PASSWORD';
 let bearerAuth = defaultClient.authentications['bearerAuth'];
 bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new OpensvcAgentApi.ObjectVolApi();
+let apiInstance = new TestOpensvcAgentApi.ObjectVolApi();
 let namespace = test; // String | 
-let kind = new OpensvcAgentApi.Kind(); // Kind | 
+let kind = new TestOpensvcAgentApi.Kind(); // Kind | 
 let name = "name_example"; // String | 
 apiInstance.postObjectActionUnfreeze(namespace, kind, name, (error, data, response) => {
   if (error) {
@@ -596,8 +596,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import OpensvcAgentApi from 'opensvc_agent_api';
-let defaultClient = OpensvcAgentApi.ApiClient.instance;
+import TestOpensvcAgentApi from 'test_opensvc_agent_api';
+let defaultClient = TestOpensvcAgentApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
 let basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
@@ -606,9 +606,9 @@ basicAuth.password = 'YOUR PASSWORD';
 let bearerAuth = defaultClient.authentications['bearerAuth'];
 bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new OpensvcAgentApi.ObjectVolApi();
+let apiInstance = new TestOpensvcAgentApi.ObjectVolApi();
 let namespace = test; // String | 
-let kind = new OpensvcAgentApi.Kind(); // Kind | 
+let kind = new TestOpensvcAgentApi.Kind(); // Kind | 
 let name = "name_example"; // String | 
 apiInstance.postObjectActionUnprovision(namespace, kind, name, (error, data, response) => {
   if (error) {
@@ -651,8 +651,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import OpensvcAgentApi from 'opensvc_agent_api';
-let defaultClient = OpensvcAgentApi.ApiClient.instance;
+import TestOpensvcAgentApi from 'test_opensvc_agent_api';
+let defaultClient = TestOpensvcAgentApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
 let basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
@@ -661,12 +661,12 @@ basicAuth.password = 'YOUR PASSWORD';
 let bearerAuth = defaultClient.authentications['bearerAuth'];
 bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new OpensvcAgentApi.ObjectVolApi();
+let apiInstance = new TestOpensvcAgentApi.ObjectVolApi();
 let namespace = test; // String | 
-let kind = new OpensvcAgentApi.Kind(); // Kind | 
+let kind = new TestOpensvcAgentApi.Kind(); // Kind | 
 let name = "name_example"; // String | 
 let opts = {
-  'objectConfigFile': new OpensvcAgentApi.ObjectConfigFile() // ObjectConfigFile | OK
+  'objectConfigFile': new TestOpensvcAgentApi.ObjectConfigFile() // ObjectConfigFile | OK
 };
 apiInstance.postObjectConfigFile(namespace, kind, name, opts, (error, data, response) => {
   if (error) {
@@ -712,8 +712,8 @@ Delete sections, unset and set keywords in the object configuration file.
 ### Example
 
 ```javascript
-import OpensvcAgentApi from 'opensvc_agent_api';
-let defaultClient = OpensvcAgentApi.ApiClient.instance;
+import TestOpensvcAgentApi from 'test_opensvc_agent_api';
+let defaultClient = TestOpensvcAgentApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
 let basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
@@ -722,9 +722,9 @@ basicAuth.password = 'YOUR PASSWORD';
 let bearerAuth = defaultClient.authentications['bearerAuth'];
 bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new OpensvcAgentApi.ObjectVolApi();
+let apiInstance = new TestOpensvcAgentApi.ObjectVolApi();
 let namespace = test; // String | 
-let kind = new OpensvcAgentApi.Kind(); // Kind | 
+let kind = new TestOpensvcAgentApi.Kind(); // Kind | 
 let name = "name_example"; // String | 
 let opts = {
   '_delete': ["task#unwanted"], // [String] | 
@@ -775,8 +775,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import OpensvcAgentApi from 'opensvc_agent_api';
-let defaultClient = OpensvcAgentApi.ApiClient.instance;
+import TestOpensvcAgentApi from 'test_opensvc_agent_api';
+let defaultClient = TestOpensvcAgentApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
 let basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
@@ -785,12 +785,12 @@ basicAuth.password = 'YOUR PASSWORD';
 let bearerAuth = defaultClient.authentications['bearerAuth'];
 bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new OpensvcAgentApi.ObjectVolApi();
+let apiInstance = new TestOpensvcAgentApi.ObjectVolApi();
 let namespace = test; // String | 
-let kind = new OpensvcAgentApi.Kind(); // Kind | 
+let kind = new TestOpensvcAgentApi.Kind(); // Kind | 
 let name = "name_example"; // String | 
 let opts = {
-  'objectConfigFile': new OpensvcAgentApi.ObjectConfigFile() // ObjectConfigFile | OK
+  'objectConfigFile': new TestOpensvcAgentApi.ObjectConfigFile() // ObjectConfigFile | OK
 };
 apiInstance.putObjectConfigFile(namespace, kind, name, opts, (error, data, response) => {
   if (error) {

@@ -1,4 +1,4 @@
-# OpensvcAgentApi.DaemonApi
+# TestOpensvcAgentApi.DaemonApi
 
 All URIs are relative to *http://localhost*
 
@@ -26,8 +26,8 @@ Listen node daemon events
 ### Example
 
 ```javascript
-import OpensvcAgentApi from 'opensvc_agent_api';
-let defaultClient = OpensvcAgentApi.ApiClient.instance;
+import TestOpensvcAgentApi from 'test_opensvc_agent_api';
+let defaultClient = TestOpensvcAgentApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
 let basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
@@ -36,7 +36,7 @@ basicAuth.password = 'YOUR PASSWORD';
 let bearerAuth = defaultClient.authentications['bearerAuth'];
 bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new OpensvcAgentApi.DaemonApi();
+let apiInstance = new TestOpensvcAgentApi.DaemonApi();
 let nodename = localhost; // String | 
 let opts = {
   'duration': 5s, // String | max duration
@@ -87,8 +87,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import OpensvcAgentApi from 'opensvc_agent_api';
-let defaultClient = OpensvcAgentApi.ApiClient.instance;
+import TestOpensvcAgentApi from 'test_opensvc_agent_api';
+let defaultClient = TestOpensvcAgentApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
 let basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
@@ -97,7 +97,7 @@ basicAuth.password = 'YOUR PASSWORD';
 let bearerAuth = defaultClient.authentications['bearerAuth'];
 bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new OpensvcAgentApi.DaemonApi();
+let apiInstance = new TestOpensvcAgentApi.DaemonApi();
 apiInstance.getDaemonRunning((error, data, response) => {
   if (error) {
     console.error(error);
@@ -134,8 +134,8 @@ This endpoint does not need any parameter.
 ### Example
 
 ```javascript
-import OpensvcAgentApi from 'opensvc_agent_api';
-let defaultClient = OpensvcAgentApi.ApiClient.instance;
+import TestOpensvcAgentApi from 'test_opensvc_agent_api';
+let defaultClient = TestOpensvcAgentApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
 let basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
@@ -144,7 +144,7 @@ basicAuth.password = 'YOUR PASSWORD';
 let bearerAuth = defaultClient.authentications['bearerAuth'];
 bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new OpensvcAgentApi.DaemonApi();
+let apiInstance = new TestOpensvcAgentApi.DaemonApi();
 let opts = {
   'namespace': "namespace_example", // String | namespace
   'selector': "selector_example" // String | selector
@@ -189,8 +189,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import OpensvcAgentApi from 'opensvc_agent_api';
-let defaultClient = OpensvcAgentApi.ApiClient.instance;
+import TestOpensvcAgentApi from 'test_opensvc_agent_api';
+let defaultClient = TestOpensvcAgentApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
 let basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
@@ -199,8 +199,8 @@ basicAuth.password = 'YOUR PASSWORD';
 let bearerAuth = defaultClient.authentications['bearerAuth'];
 bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new OpensvcAgentApi.DaemonApi();
-let postDaemonLogsControl = new OpensvcAgentApi.PostDaemonLogsControl(); // PostDaemonLogsControl | set daemon log level
+let apiInstance = new TestOpensvcAgentApi.DaemonApi();
+let postDaemonLogsControl = new TestOpensvcAgentApi.PostDaemonLogsControl(); // PostDaemonLogsControl | set daeffmn log levelmkkk
 apiInstance.postDaemonLogsControl(postDaemonLogsControl, (error, data, response) => {
   if (error) {
     console.error(error);
@@ -215,7 +215,7 @@ apiInstance.postDaemonLogsControl(postDaemonLogsControl, (error, data, response)
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **postDaemonLogsControl** | [**PostDaemonLogsControl**](PostDaemonLogsControl.md)| set daemon log level | 
+ **postDaemonLogsControl** | [**PostDaemonLogsControl**](PostDaemonLogsControl.md)| set daeffmn log levelmkkk | 
 
 ### Return type
 
@@ -242,8 +242,8 @@ Restart the daemon on this node.  The node svc and vol instances do not change s
 ### Example
 
 ```javascript
-import OpensvcAgentApi from 'opensvc_agent_api';
-let defaultClient = OpensvcAgentApi.ApiClient.instance;
+import TestOpensvcAgentApi from 'test_opensvc_agent_api';
+let defaultClient = TestOpensvcAgentApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
 let basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
@@ -252,7 +252,7 @@ basicAuth.password = 'YOUR PASSWORD';
 let bearerAuth = defaultClient.authentications['bearerAuth'];
 bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new OpensvcAgentApi.DaemonApi();
+let apiInstance = new TestOpensvcAgentApi.DaemonApi();
 let nodename = localhost; // String | 
 apiInstance.postDaemonRestart(nodename, (error, data, response) => {
   if (error) {
@@ -295,8 +295,8 @@ Shut down all the node svc and vol instances, then stop the daemon.  Peer nodes 
 ### Example
 
 ```javascript
-import OpensvcAgentApi from 'opensvc_agent_api';
-let defaultClient = OpensvcAgentApi.ApiClient.instance;
+import TestOpensvcAgentApi from 'test_opensvc_agent_api';
+let defaultClient = TestOpensvcAgentApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
 let basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
@@ -305,7 +305,7 @@ basicAuth.password = 'YOUR PASSWORD';
 let bearerAuth = defaultClient.authentications['bearerAuth'];
 bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new OpensvcAgentApi.DaemonApi();
+let apiInstance = new TestOpensvcAgentApi.DaemonApi();
 let nodename = localhost; // String | 
 let opts = {
   'duration': 5s // String | max duration
@@ -352,8 +352,8 @@ Stop the daemon.  The node svc and vol instances do not change state. The peer n
 ### Example
 
 ```javascript
-import OpensvcAgentApi from 'opensvc_agent_api';
-let defaultClient = OpensvcAgentApi.ApiClient.instance;
+import TestOpensvcAgentApi from 'test_opensvc_agent_api';
+let defaultClient = TestOpensvcAgentApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
 let basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
@@ -362,7 +362,7 @@ basicAuth.password = 'YOUR PASSWORD';
 let bearerAuth = defaultClient.authentications['bearerAuth'];
 bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new OpensvcAgentApi.DaemonApi();
+let apiInstance = new TestOpensvcAgentApi.DaemonApi();
 let nodename = localhost; // String | 
 apiInstance.postDaemonStop(nodename, (error, data, response) => {
   if (error) {
@@ -403,8 +403,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import OpensvcAgentApi from 'opensvc_agent_api';
-let defaultClient = OpensvcAgentApi.ApiClient.instance;
+import TestOpensvcAgentApi from 'test_opensvc_agent_api';
+let defaultClient = TestOpensvcAgentApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
 let basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
@@ -413,8 +413,8 @@ basicAuth.password = 'YOUR PASSWORD';
 let bearerAuth = defaultClient.authentications['bearerAuth'];
 bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new OpensvcAgentApi.DaemonApi();
-let postDaemonSubAction = new OpensvcAgentApi.PostDaemonSubAction(); // PostDaemonSubAction | action on daemon sub components
+let apiInstance = new TestOpensvcAgentApi.DaemonApi();
+let postDaemonSubAction = new TestOpensvcAgentApi.PostDaemonSubAction(); // PostDaemonSubAction | action on daemon sub components
 apiInstance.postDaemonSubAction(postDaemonSubAction, (error, data, response) => {
   if (error) {
     console.error(error);

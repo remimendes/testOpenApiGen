@@ -1,4 +1,4 @@
-# OpensvcAgentApi.PostDaemonLogsControl
+# TestOpensvcAgentApi.PostDaemonLogsControl
 
 ## Properties
 

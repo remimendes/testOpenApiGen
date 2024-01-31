@@ -1,4 +1,4 @@
-# OpensvcAgentApi.DNSRecord
+# TestOpensvcAgentApi.DNSRecord
 
 ## Properties
 
